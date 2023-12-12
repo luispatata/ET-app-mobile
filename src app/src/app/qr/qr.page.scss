@@ -1,0 +1,52 @@
+ion-header {
+    background-color: #0B173B; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Asegura que el encabezado esté en una capa superior */
+  }
+  
+  .contenido {
+    min-height: 80vh; /* Reducir la altura del contenido para dar espacio al menú */
+    padding: 5%;
+  }
+  
+  .botones {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0; /* Coloca los botones en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #0B173B; /* Color de fondo de los botones */
+    padding: 10px;
+    z-index: 10; /* Asegura que los botones estén en una capa superior */
+  }
+  
+  button {
+    width: 40%;
+    background-color: #88753a; /* Color de fondo de los botones */
+    color: white; /* Color del texto de los botones */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #FFC107; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Resto de los estilos si los tienes */
+  .menu {
+    min-height: 10vh;
+    background-color: #0B173B; /* Color de fondo azul oscuro */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    filter: drop-shadow(0px -3px 4px #a9a9a9);
+    z-index: 1; /* Asegura que el menú esté en una capa superior */
+  }

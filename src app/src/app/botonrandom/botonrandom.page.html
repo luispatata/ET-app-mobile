@@ -1,0 +1,40 @@
+
+
+<ion-menu contentId="main-content">
+  <ion-header>
+ 
+  </ion-header>
+
+  
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>QR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header [translucent]="true">
+    <div class="contenido">
+  
+    </div>
+    <div class="botones">
+      <button (clic)k="escanear()">Leer qr</button>
+      <button (click)="detener()">Detener</button>
+    </div>
+
+
+<ion-tabs>
+  <ion-tab-bar [routerLink]="['/home']">
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+      inicio
+   
+ 
+
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
+
+
+

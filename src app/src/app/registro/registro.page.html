@@ -1,0 +1,15 @@
+
+
+<ion-content [fullscreen]="true">
+     <div id="contenido">
+      <h4>Nombre</h4>
+      <input type="text" [(ngModel)]="nombre">
+      <h4>Usuario</h4>
+      <input type="text" [(ngModel)]="user">
+      <h4>clave</h4>
+     <input type="password" [(ngModel)]="clave">
+     <button (click)="registrar()">registrar</button> 
+     <small [routerLink]="['/registro']">Crear Cuenta</small>
+  </div>
+  </ion-content>
+  

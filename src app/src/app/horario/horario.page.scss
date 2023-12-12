@@ -1,0 +1,82 @@
+.menu {
+  min-height: 10vh;
+  background-color: #0B173B;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  filter: drop-shadow(0px -3px 4px #a9a9a9);
+  z-index: 1;
+}
+
+.boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E2C55;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+
+  ion-icon {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #fff;
+  }
+}
+
+.boton:hover {
+  background-color: #88753a;
+}
+.Horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dia {
+  width: 100%;
+  background-color: #f5f5f5; /* Color de fondo para cada día */
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dia h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Color del título del día */
+}
+
+.clase {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.clase ion-icon {
+  font-size: 1.3rem;
+  color: #007BFF; /* Color de los íconos */
+  margin-right: 10px;
+}
+
+.clase h2 {
+  font-size: 1.1rem;
+  color: #555; /* Color del título de la clase */
+}
+
+.clase p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #777; /* Color del texto de la clase */
+}

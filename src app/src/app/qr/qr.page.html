@@ -1,0 +1,49 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <div class="container">
+      <div class="menu">
+        <div class="boton" [routerLink]="['/horario']">
+          <ion-icon name="calendar-number-outline"></ion-icon>
+          <h3>Horario</h3>
+        </div>
+        <div class="boton" [routerLink]="['/Lista']">
+          <ion-icon name="bookmarks-outline"></ion-icon>
+          <h3>Lista</h3>
+        </div>
+        <div class="boton" [routerLink]="['/qr']">
+          <ion-icon name="qr-code-outline"></ion-icon>
+          <h3>QR</h3>
+        </div>
+        <div class="boton" [routerLink]="['/perfil']">
+          <ion-icon name="person-circle"></ion-icon>
+          <button></button>
+          <h3>Perfil</h3>
+        </div>
+      </div>
+    </div>
+  </ion-header>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>QR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header [translucent]="true">
+    <div class="contenido">
+
+    </div>
+    <ion-tabs>
+      <ion-tab-bar [routerLink]="['/home']">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+          inicio
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-header>
+</div>
+<div class="botones">
+  <button (click)="escanear()">Leer qr</button>
+  <button (click)="detener()">Detener</button>
+</div>
